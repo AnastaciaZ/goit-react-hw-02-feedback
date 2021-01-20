@@ -36,16 +36,16 @@ class App extends React.Component {
             onLeaveFeedback={this.handlFeedback}
           />
           </Section>
-        <Section title="Statistics">
-           <Notification/>
-          <Statistics
+        <Section title="Statistics" >
+          {this.countTotalFeedback() > 0
+            ? <Statistics
             good={this.state.good}
             neutral={this.state.neutral}
             bad={this.state.bad}
             total={this.countTotalFeedback() }
             positivePercentage={this.countPositiveFeedbackPercentage() }
           />
-         
+            :<Notification/>}
          </Section>                
       </div>
     );

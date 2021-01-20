@@ -1,14 +1,14 @@
 import React from 'react';
-//import s from './Statistics.module.css';
+import s from './Statistics.module.css';
 
 const Statistics = ({ good, neutral, bad, total, positivePercentage}) => {
     return (
         <div>
-           <p>Good: {good}</p>
-            <p>Neutral: {neutral}</p>
-            <p>Bad: {bad}</p>
-            <p>Total: {total }</p>
-           <p>Positive feetback: { positivePercentage}%</p>
+            <p className={ s.text}>Good: {good}</p>
+            <p className={ s.text}>Neutral: {neutral}</p>
+            <p className={ s.text}>Bad: {bad}</p>
+            <p className={ s.totalText}>Total: {total }</p>
+           <p className={ s.totalText}>Positive feetback: { positivePercentage}%</p>
         </div>
     );
 

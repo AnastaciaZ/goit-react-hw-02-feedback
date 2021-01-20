@@ -1,9 +1,9 @@
-.title {
-  margin-bottom: 20px;
+.text {
+  color: green;
+  font-weight: bold;
+  font-size: medium;
 }
-.container {
-  margin-bottom: 20px;
-  width: 410px;
-  padding: 20px 50px;
-  border: solid 1px green;
+.totalText {
+  font-weight: bold;
+  font-size: medium;
 }
